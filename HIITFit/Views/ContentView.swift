@@ -3,11 +3,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
   var body: some View {
       TabView {
         WelcomeView()
-        ExerciseView()
-        Text("Exercise 2")
+        ForEach(0..<4) {
+            index in ExerciseView (index: index)
+        }
       }
    }
 }

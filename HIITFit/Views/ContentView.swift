@@ -5,8 +5,8 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
       TabView {
-        Text("Welcome")
-        Text("Exercise 1")
+        WelcomeView()
+        ExerciseView()
         Text("Exercise 2")
       }
    }

@@ -13,8 +13,22 @@ struct HistoryView: View {
         VStack {
             Text("History")
                 .font(.title)
-            .padding()
-        } // Exercise history
+                .padding()
+            Form {
+                Section(
+                    header:
+                        Text(today.formatted(as: "MMM d"))
+                        .font(.headline)
+                    
+                ){}
+                Section(
+                    header:
+                        Text(yesterday.formatted(as: "MMM d"))
+                        .font(.headline)
+                    
+                ){}
+            }
+        }
     }
 }
 

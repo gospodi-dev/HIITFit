@@ -20,9 +20,15 @@ struct ExerciseView: View {
                     Text("Couldn't find \(videoNames[index]).mp4").foregroundColor(.red)
                 }
                 Text(Date().addingTimeInterval(interval), style: .timer).font(.system(size: 90))
+                Button("Start/Done") {}
+                .font(.title3)
+                .padding()
+
                 Text("Start/Done button")
                 Text("Rating")
-                Text("History button")
+                Spacer()
+                Button("History") {}
+                .padding()
             }
         }
         

@@ -1,6 +1,7 @@
 
 
 import SwiftUI
+import AVKit
 
 struct ExerciseView: View {
     let videoNames = ["squat", "step-up", "burpee", "sun-salute"]

@@ -10,27 +10,34 @@ struct HistoryView: View {
     let exercises2 = ["Squat", "Step Up", "Burpee"]
     
     var body: some View {
-        VStack {
-            Text("History")
-                .font(.title)
+        ZStack(alignment: .topTrailing) {
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Image(systemName: "xmark.circle")
+            }.font(.title)
                 .padding()
-            Form {
-                Section(
-                    header:
-                        Text(today.formatted(as: "MMM d"))
-                        .font(.headline)
-                ){
-                    ForEach(exercises1, id: \.self) { exercises in
-                        Text(exercises)
+            
+            VStack {
+                Text("History")
+                    .font(.title)
+                    .padding()
+                Form {
+                    Section(
+                        header:
+                            Text(today.formatted(as: "MMM d"))
+                            .font(.headline)
+                    ){
+                        ForEach(exercises1, id: \.self) { exercises in
+                            Text(exercises)
+                        }
                     }
-                }
-                Section(
-                    header:
-                        Text(yesterday.formatted(as: "MMM d"))
-                        .font(.headline)
-                ){
-                    ForEach(exercises2, id: \.self) { exercises in
-                        Text(exercises)
+                    Section(
+                        header:
+                            Text(yesterday.formatted(as: "MMM d"))
+                            .font(.headline)
+                    ){
+                        ForEach(exercises2, id: \.self) { exercises in
+                            Text(exercises)
+                        }
                     }
                 }
             }

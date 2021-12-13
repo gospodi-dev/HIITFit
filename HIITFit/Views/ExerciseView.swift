@@ -25,7 +25,7 @@ struct ExerciseView: View {
                 .padding()
 
                 Text("Start/Done button")
-                Text("Rating")
+                RatingView().padding()
                 Spacer()
                 Button("History") {}
                 .padding()

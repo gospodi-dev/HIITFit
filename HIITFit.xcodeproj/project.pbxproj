@@ -10,6 +10,7 @@
 		CC66626C276795890058A26E /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66626B276795890058A26E /* HistoryView.swift */; };
 		CC771AF027666A0700B78DBD /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC771AEF27666A0700B78DBD /* WelcomeView.swift */; };
 		CC771AF227666A2B00B78DBD /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC771AF127666A2B00B78DBD /* ExerciseView.swift */; };
+		CCB712202768E7DD00EAA482 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7121F2768E7DD00EAA482 /* SuccessView.swift */; };
 		CCDC7F3627674F61005E00F2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDC7F3527674F61005E00F2 /* HeaderView.swift */; };
 		CCDC7F3827677008005E00F2 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDC7F3727677008005E00F2 /* RatingView.swift */; };
 		CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30C923251474DC0049DB93 /* HIITFitApp.swift */; };
@@ -28,6 +29,7 @@
 		CC66626B276795890058A26E /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		CC771AEF27666A0700B78DBD /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		CC771AF127666A2B00B78DBD /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		CCB7121F2768E7DD00EAA482 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		CCDC7F3527674F61005E00F2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		CCDC7F3727677008005E00F2 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		CD30C920251474DC0049DB93 /* HIITFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIITFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +116,7 @@
 				CC66626B276795890058A26E /* HistoryView.swift */,
 				CCDC7F3527674F61005E00F2 /* HeaderView.swift */,
 				CCDC7F3727677008005E00F2 /* RatingView.swift */,
+				CCB7121F2768E7DD00EAA482 /* SuccessView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				CC771AF227666A2B00B78DBD /* ExerciseView.swift in Sources */,
 				CC771AF027666A0700B78DBD /* WelcomeView.swift in Sources */,
+				CCB712202768E7DD00EAA482 /* SuccessView.swift in Sources */,
 				CD30C926251474DC0049DB93 /* ContentView.swift in Sources */,
 				CCDC7F3827677008005E00F2 /* RatingView.swift in Sources */,
 				CD30C93F25147A8C0049DB93 /* DateExtension.swift in Sources */,

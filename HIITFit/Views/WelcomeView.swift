@@ -13,7 +13,7 @@ struct WelcomeView: View {
 
             }
             VStack {
-                HStack {
+                HStack (alignment: .bottom){
                     VStack (alignment: .leading) {
                         Text("Get fit").font(.largeTitle)
                         Text("with high intensity interval training").font(.headline)

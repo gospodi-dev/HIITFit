@@ -20,6 +20,9 @@ struct WelcomeView: View {
                     }
                     Image("step-up")
                         .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 240.0, height: 240.0)
+                        .clipShape(Circle())
                 }
                 
             }

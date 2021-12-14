@@ -19,6 +19,7 @@ struct WelcomeView: View {
                         Text("with high intensity interval training").font(.headline)
                     }
                     Image("step-up")
+                        .resizable()
                 }
                 
             }

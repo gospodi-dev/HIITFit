@@ -18,6 +18,9 @@ struct SuccessView: View {
                 Так что ешьте хорошо и больше отдыхайте.
                 """
             )
+                .multilineTextAlignment(.center)
+                .foregroundColor(.gray)
+            
         }
     }
 }

@@ -4,7 +4,7 @@ import SwiftUI
 
 struct WelcomeView: View {
     var body: some View {
-       HeaderView(exerciseNames: "Welcome")
+       HeaderView(titleText: "Welcome")
     }
 }
 

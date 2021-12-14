@@ -12,12 +12,13 @@ struct WelcomeView: View {
                 }.padding()
 
             }
-            VStack (alignment: .leading) {
+            VStack {
                 HStack {
-                    VStack {
+                    VStack (alignment: .leading) {
                         Text("Get fit").font(.largeTitle)
                         Text("with high intensity interval training").font(.headline)
                     }
+                    Image("step-up")
                 }
                 
             }

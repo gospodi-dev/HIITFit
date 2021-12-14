@@ -19,12 +19,16 @@ struct WelcomeView: View {
                         Text("with high intensity interval training").font(.headline)
                     }
                     Image("step-up")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 240.0, height: 240.0)
-                        .clipShape(Circle())
+                        .resizedToFill(width: 240, height: 240)
+                    
                 }
-                
+                Button(action: {}) {
+                    Text("Get fit")
+                    Image(systemName: "arrow.right.circle")
+                }
+                .font(.title2)
+                .padding()
+                .background(RoundedRectangle(cornerRadius: 20).stroke(Color.gray, lineWidth: 2))
             }
         }
     }

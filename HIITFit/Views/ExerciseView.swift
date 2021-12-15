@@ -18,14 +18,14 @@ struct ExerciseView: View {
                     Text("Couldn't find \(Exercise.exercises[index].videoName).mp4").foregroundColor(.red)
                 }
                 Text(Date().addingTimeInterval(interval), style: .timer).font(.system(size: 90))
-                Button("Start/Done") {}
+                Button(NSLocalizedString("Start/Done", comment: "begin exercise / mark as finished")) {}
                 .font(.title3)
                 .padding()
 
                 Text("Start/Done button")
                 RatingView().padding()
                 Spacer()
-                Button("History") {}
+                Button(NSLocalizedString("History", comment: "view user activity")) {}
                 .padding()
             }
         }

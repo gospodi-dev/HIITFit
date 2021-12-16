@@ -25,7 +25,7 @@ struct WelcomeView: View {
                         .resizedToFill(width: 240, height: 240)
                     
                 }
-                Button(action: {}) {
+                Button(action: { selectedTab = 0 }) {
                     Text(NSLocalizedString("Get Started", comment: "invitation"))
                     Image(systemName: "arrow.right.circle")
                 }

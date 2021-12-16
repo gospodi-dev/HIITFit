@@ -10,6 +10,10 @@ struct ExerciseView: View {
     let index: Int
     let interval: TimeInterval = 30
     
+    var lastExercise: Bool {
+        index + 1 == Exercise.exercises.count
+    }
+    
     var body: some View {
         GeometryReader { geometry in
             VStack {
@@ -20,11 +24,19 @@ struct ExerciseView: View {
                     Text("Couldn't find \(Exercise.exercises[index].videoName).mp4").foregroundColor(.red)
                 }
                 Text(Date().addingTimeInterval(interval), style: .timer).font(.system(size: 90))
-                Button(NSLocalizedString("Start/Done", comment: "begin exercise / mark as finished")) {}
+                HStack(spacing: 150){
+                    Button("Start Exercise") {
+                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                    }
+                    Button("Done") {
+                        selectedTab = lastExercise ? 9 : selectedTab + 1
+                    }
+                }
                 .font(.title3)
                 .padding()
 
-                Text("Start/Done button")
+              
+                
                 RatingView().padding()
                 Spacer()
                 Button(NSLocalizedString("History", comment: "view user activity")) {}
